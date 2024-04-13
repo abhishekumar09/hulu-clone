@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&family=Rubik:wght@400;600;700&display=swap");
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  line-height: 1.4;
+  color: white;
+  overflow-x: hidden;
+  font-family: "Rubik", sans-serif;
+  background-color: #000;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #ccc;
+}
+ul {
+  list-style-type: none;
+}
+img {
+  width: 100%;
+}
+h4 {
+  font-size: small;
+  color: #00ed82;
+  text-transform: uppercase;
+}
+h3 {
+  color: white;
+  font-size: 26px;
+  font-weight: 300;
+}
+.legal-text {
+  font-size: 10px;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #333;
+  min-width: 135px;
+  padding: 20px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 14px;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn-cta:hover {
+  opacity: 0.8;
+}
+.btn-outline {
+  background: none;
+  color: white;
+  border: 2px solid #fff;
+}
+.btn-outline:hover {
+  border-color: rgba(128, 128, 128);
+  color: white;
+}
+.sub-link {
+  display: block;
+  color: #ccc;
+  font-size: 12px;
+  margin-top: 5px;
+  text-decoration: underline;
+}
+.text-xl {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+/* headers */
+
+.header nav .login-btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+.header ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px;
+}
+.header {
+  background: no-repeat center center/cover
+    url(https://raw.githubusercontent.com/bradtraversy/hulu-webpage-clone/main/img/header.jpg);
+}
+
+.header::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.76) 15.54%,
+    rgba(0, 0, 0, 0.192) 60.23%,
+    rgba(0, 0, 0, 8e-5) 100%
+  );
+}
+.header .header-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.header-content img {
+  width: 270px;
+  margin: 20px 0;
+}
+.header .header-text-1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header .header-text-2 {
+  font-size: 18px;
+  margin: 25px;
+}
+
+/* sub header */
+.sub-header {
+   height: 151px; 
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  gap: 40px;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.sub-header > div:last-of-type {
+  justify-self: end;
+  align-self: end;
+}
+.sub-header > div:last-of-type .sub-link {
+  text-align: center;
+}
+
+/* categories */
+.categories .sub-text {
+  max-width: 850px;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 90px 40px;
+}
+.categories .covers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+.categories .covers > div {
+  height: 500px;
+  width: 300px;
+  position: relative;
+}
+.categories .cover-1 {
+  background: url(https://raw.githubusercontent.com/bradtraversy/hulu-webpage-clone/main/img/cover-1.jpg)
+    no-repeat center center / cover;
+}
+.categories .cover-2 {
+  background: url(https://raw.githubusercontent.com/bradtraversy/hulu-webpage-clone/main/img/cover-2.jpg)
+    no-repeat center center / cover;
+}
+.categories .cover-3 {
+  background: url(https://raw.githubusercontent.com/bradtraversy/hulu-webpage-clone/main/img/cover-3.jpg)
+    no-repeat center center / cover;
+}
+.categories .cover-4 {
+  background: url(https://raw.githubusercontent.com/bradtraversy/hulu-webpage-clone/main/img/cover-4.jpg)
+    no-repeat center center / cover;
+}
+
+.categories .covers .cover-grad {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(
+      156.82deg,
+      rgba(0, 0, 0, 0.6) 4.58%,
+      rgba(0, 0, 0, 0) 69.61%
+    ),
+    linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+}
+
+.categories .covers .cover-text {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  top: 20px;
+  left: 25px;
+}
+
+/* live */
+.live {
+  background: #151516;
+  padding: 40px;
+}
+
+.live-border {
+  border: 4px solid #1ce783;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.live a {
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.live-sports {
+  background: url(https://raw.githubusercontent.com/bradtraversy/hulu-webpage-clone/main/img/live-sports.jpg)
+    no-repeat center center / cover;
+  height: 800px;
+  position: relative;
+}
+.live-sports-content {
+  position: absolute;
+  top: 160px;
+  left: 100px;
+  max-width: 550px;
+}
+.live-sports-logos {
+  width: 300px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.live-sports-logos > div {
+  background: url(https://raw.githubusercontent.com/bradtraversy/hulu-webpage-clone/main/img/network-logo-bg.png)
+    no-repeat center center / cover;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.live-sports-logos img {
+  width: 40px;
+}
+
+/* footer */
+.footer {
+  background: #ebedf2;
+  color: #333;
+}
+.footer a {
+  color: #333;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px;
+}
+
+.footer-lists {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .list-head {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.divider {
+  height: 3px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 25px;
+}
+
+/* modal */
+
+.modal {
+  display: none;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal .modal-box {
+  position: relative;
+  margin: 10% auto;
+  width: 400px;
+  background: #fff;
+  color: black;
+  animation: modalopen 0.1s;
+}
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.modal-body {
+  padding: 50px;
+}
+.modal-body .btn {
+  width: 100%;
+  margin-top: 30px;
+}
+.modal .btn-dark {
+  background: #000;
+  color: #fff;
+}
+.modal h3 {
+  font-weight: bold;
+  color: black;
+}
+
+.modal .close {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.modal .modal-footer {
+  background: #f7f7f9;
+  color: #333;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+.modal .modal-footer a {
+  color: steelblue;
+}
+
+.modal p a {
+  color: steelblue;
+}
+/* form */
+
+.form-control {
+  margin: 10px 0;
+}
+.form-control label {
+  display: block;
+  text-transform: uppercase;
+}
+.form-control input {
+  width: 100%;
+  border: 2px #ccc solid;
+  border-radius: 5px;
+  height: 50px;
+  padding: 5px;
+}
+
+/* media queries */
+
+@media (max-width: 1260px) {
+  .categories .covers {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .logo {
+    width: 200px;
+  }
+
+  .header .header-content {
+    text-align: center;
+    padding: 0 20px;
+  }
+  .header .header-text-2 {
+    display: none;
+  }
+  .header .header-text-1 {
+    margin-bottom: 40px;
+  }
+
+  .sub-header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+  .sub-header img {
+    width: 250px;
+    margin: auto;
+  }
+  .sub-header > div:last-of-type {
+    justify-self: center;
+    align-self: center;
+  }
+  .sub-header h3 {
+    display: none;
+  }
+
+  .text-xl {
+    line-height: 1.2;
+    font-size: 40px;
+  }
+  .categories .sub-text {
+    font-size: 18px;
+  }
+  .categories .covers {
+    grid-template-columns: 1fr;
+  }
+
+  .live-border {
+    padding: 30px 10px;
+  }
+
+  .live-sports {
+    background: url(https://raw.githubusercontent.com/bradtraversy/hulu-webpage-clone/main/img/live-sports-small.jpg)
+      no-repeat center center / cover;
+  }
+  .live-sports-content {
+    top: 30px;
+    left: 20px;
+    margin-top: 60px;
+  }
+  .footer-lists {
+    flex-direction: column;
+  }
+
+  .modal .modal-box {
+    width: 250px;
+  }
+}
